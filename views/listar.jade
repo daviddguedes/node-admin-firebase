@@ -1,0 +1,33 @@
+html(ng-app='adminFirebase')
+    head
+        title('Listar Usuários')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+
+    body(ng-controller='MainCtrl')
+        div(class='container')
+            div(class='row')
+                table(class='table table-striped')
+                    thead
+                        tr
+                            th
+                                span='Acão'
+                            th
+                                span='Email'
+                            th
+                                span='Desde'
+
+                    tbody
+                        tr(ng-repeat="user in usuarios | orderBy: '-date' ")
+                            td
+                                a(class='btn btn-danger', href='', ng-click='deleteUser(user)')
+                                    span= 'Excluir Usuário'
+                            td
+                                {{ user.email }}
+                            td
+                                {{ user.date | date: 'dd/MM/yyyy' }}
+                    
+
+        script(src='https://www.gstatic.com/firebasejs/3.6.0/firebase.js')
+        script(src='libs/jquery/dist/jquery.js')
+        script(src='libs/angular/angular.js')
+        script(src='scripts/app.js')

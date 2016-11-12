@@ -1,0 +1,21 @@
+{
+  "name": "bemean",
+  "description": "Iniciando com Node e Express",
+  "main": "app.js",
+  "authors": [
+    "David Coelho"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
+}
