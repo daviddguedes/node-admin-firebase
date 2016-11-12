@@ -12,6 +12,7 @@
 		replace your credentials in "scripts/app.js"
 		setup Firebase SDK "https://firebase.google.com/docs/admin/setup"
 		node app.js
+		visit "http://localhost:3000"
 
 	
 
